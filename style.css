@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--body-bg-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 20px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+
+}
+
+aside {
+    width: 438px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/* perfil */
+#profile {
+    padding: 24px 0;
+    text-align: center;
+}
+
+#profile img {
+    width: 128px;
+    height: 128px;
+    flex-shrink: 0;
+
+    border-radius: 128px;
+    border: 2px solid #0F0;
+    background: lightgray 50% / cover no-repeat;
+    margin-bottom: 15px;
+
+}
+
+#profile p {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+/* informacoes */
+#infos {
+    padding: 34px 40px;
+    
+}
+
+#infos ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+#infos ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+/* tecnologias */
+#techs, #exp-edu {
+    padding: 20px;
+}
+
+
+#tech-names {
+    margin: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tech {
+    border-radius: 30px;
+    color: black;
+    background-color: var(--bg-techs);
+    font-size: 10px;
+    width: 86px;
+    padding: 6px 0 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* experiencias e educacao */
+#exp-edu ul {
+    padding: 20px 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#exp-edu ul li{
+    margin-top: 10px;
+}
+
+#exp-edu ul p {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+/* container */
+#container {
+    flex: 1;
+    padding: 40px 40px 40px 20px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* meus projetos */
+#my-projects, #recent-posts {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#my-projects h1, #recent-posts h1 {
+    font-size: 20px;
+}
+
+#my-projects a {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+/* repositorios destacados */
+#links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pasta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.pasta h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.repos {
+    padding: 30px;
+    width: calc(50% - 8px);
+}
+
+.repos h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+.repos p {
+    margin-top: 22px;
+    margin-bottom: 47px;
+}
+
+.repos p, .repos span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#foot {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#icons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+#icons span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#tech-pre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#circle-yellow {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #837E9F;
+    border-radius: 50%;
+    background-color: #E7DE79;
+
+}
+
+
+/* posts recentes */
+#post {
+    display: flex;
+}
+
+#post img {
+    border: none;
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+
+#text {
+    padding: 30px 20px 0;
+
+}
+
+#text h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#text p {
+    font-size: 14px;
+    font-weight: 400;
+}
