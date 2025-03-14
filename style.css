@@ -180,6 +180,7 @@ aside {
 .repos {
     padding: 30px;
     width: calc(50% - 8px);
+    cursor: pointer;
 }
 
 .repos h3 {
@@ -237,6 +238,7 @@ aside {
 /* posts recentes */
 #post {
     display: flex;
+    padding: 0 25px 30px 25px;
 }
 
 #post img {
@@ -247,7 +249,10 @@ aside {
 
 #text {
     padding: 30px 20px 0;
+}
 
+#text {
+    padding-top: 30px;
 }
 
 #text h1 {
